@@ -1,15 +1,15 @@
-import emitter from "./../lib/emitter";
+import emitter from "./../lib/emitter.js";
 // import Settings from "../Settings/Settings";
-import Settings from "./../Settings/Settings";
+import Settings from "./../Settings/Settings.js";
 // import Emitter from "licia/Emitter";
-import Emitter from "./../../node_modules/licia/Emitter";
-import $ from "./../../node_modules/licia/$";
-import nextTick from "./../../node_modules/icia/nextTick";
-import orientation from "./../../node_modules/licia/orientation";
-import pointerEvent from "./../../node_modules/licia/pointerEvent";
-import { pxToNum, classPrefix as c, eventClient } from "./../lib/util";
+import Emitter from "./../../node_modules/licia/Emitter.js";
+import $ from "./../../node_modules/licia/$.js";
+import nextTick from "./../../node_modules/licia/nextTick.js";
+import orientation from "./../../node_modules/licia/orientation.js";
+import pointerEvent from "./../../node_modules/licia/pointerEvent.js";
+import { pxToNum, classPrefix as c, eventClient } from "./../lib/util.js";
 // import evalCss from "../lib/evalCss";
-import evalCss from "./../lib/evalCss";
+import evalCss from "./../lib/evalCss.js";
 
 const $document = $(document);
 

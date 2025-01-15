@@ -1,4 +1,4 @@
-import Logger from 'licia/Logger'
+import Logger from 'licia/Logger.js'
 
 let logger
 

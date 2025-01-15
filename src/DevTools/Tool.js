@@ -1,4 +1,4 @@
-import Class from 'licia/Class'
+import Class from 'licia/Class.js'
 
 export default Class({
   init($el) {

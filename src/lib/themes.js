@@ -1,6 +1,6 @@
-import extend from 'licia/extend'
-import isArr from 'licia/isArr'
-import contain from 'licia/contain'
+import extend from 'licia/extend.js'
+import isArr from 'licia/isArr.js'
+import contain from 'licia/contain.js'
 
 const keyMap = [
   'background',

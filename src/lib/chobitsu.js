@@ -1,8 +1,8 @@
 import Chobitsu from 'chobitsu/Chobitsu'
-import * as Network from 'chobitsu/domains/Network'
-import * as Overlay from 'chobitsu/domains/Overlay'
-import * as DOM from 'chobitsu/domains/DOM'
-import * as Storage from 'chobitsu/domains/Storage'
+import * as Network from 'chobitsu/domains/Network.js'
+import * as Overlay from 'chobitsu/domains/Overlay.js'
+import * as DOM from 'chobitsu/domains/DOM.js'
+import * as Storage from 'chobitsu/domains/Storage.js'
 
 const chobitsu = new Chobitsu()
 chobitsu.register('Network', Network)

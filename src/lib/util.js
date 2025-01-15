@@ -1,13 +1,13 @@
-import Url from 'licia/Url'
-import contain from 'licia/contain'
-import escapeJsStr from 'licia/escapeJsStr'
-import isUndef from 'licia/isUndef'
-import last from 'licia/last'
-import map from 'licia/map'
-import memStorage from 'licia/memStorage'
-import toNum from 'licia/toNum'
-import trim from 'licia/trim'
-import html from 'licia/html'
+import Url from 'licia/Url.js'
+import contain from 'licia/contain.js'
+import escapeJsStr from 'licia/escapeJsStr.js'
+import isUndef from 'licia/isUndef.js'
+import last from 'licia/last.js'
+import map from 'licia/map.js'
+import memStorage from 'licia/memStorage.js'
+import toNum from 'licia/toNum.js'
+import trim from 'licia/trim.js'
+import html from 'licia/html.js'
 
 // https://stackoverflow.com/questions/46318395/detecting-mobile-device-notch
 export function hasSafeArea() {

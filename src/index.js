@@ -1,6 +1,6 @@
-import EntryBtn from "./EntryBtn/EntryBtn";
-import DevTools from "./DevTools/DevTools";
-import Tool from "./DevTools/Tool";
+import EntryBtn from "./EntryBtn/EntryBtn.js";
+import DevTools from "./DevTools/DevTools.js";
+import Tool from "./DevTools/Tool.js";
 // import Console from "./Console/Console";
 // import Network from "./Network/Network";
 // import Elements from "./Elements/Elements";
@@ -8,28 +8,28 @@ import Tool from "./DevTools/Tool";
 // import Resources from "./Resources/Resources";
 // import Info from "./Info/Info";
 // import Sources from "./Sources/Sources";
-import Settings from "./Settings/Settings";
-import emitter from "./lib/emitter";
-import logger from "./lib/logger";
-import * as util from "./lib/util";
-import { isDarkTheme } from "./lib/themes";
-import themes from "./lib/themes";
+import Settings from "./Settings/Settings.js";
+import emitter from "./lib/emitter.js";
+import logger from "./lib/logger.js";
+import * as util from "./lib/util.js";
+import { isDarkTheme } from "./lib/themes.js";
+import themes from "./lib/themes.js";
 // import isFn from "licia/isFn";
-import isFn from "./../node_modules/licia/isFn";
-import isNum from "./../node_modules/licia/isNum";
-import isObj from "./../node_modules/licia/isObj";
-import each from "./../node_modules/licia/each";
-import isMobile from "./../node_modules/licia/isMobile";
-import viewportScale from "./../node_modules/licia/viewportScale";
-import detectBrowser from "./../node_modules/licia/detectBrowser";
-import $ from "./../node_modules/licia/$";
-import toArr from "./../node_modules/licia/toArr";
-import upperFirst from "./../node_modules/licia/upperFirst";
-import nextTick from "./../node_modules/licia/nextTick";
-import isEqual from "./../node_modules/licia/isEqual";
-import extend from "./../node_modules/licia/extend";
-import evalCss from "./lib/evalCss";
-import chobitsu from "./lib/chobitsu";
+import isFn from "./../node_modules/licia/isFn.js";
+import isNum from "./../node_modules/licia/isNum.js";
+import isObj from "./../node_modules/licia/isObj.js";
+import each from "./../node_modules/licia/each.js";
+import isMobile from "./../node_modules/licia/isMobile.js";
+import viewportScale from "./../node_modules/licia/viewportScale.js";
+import detectBrowser from "./../node_modules/licia/detectBrowser.js";
+import $ from "./../node_modules/licia/$.js";
+import toArr from "./../node_modules/licia/toArr.js";
+import upperFirst from "./../node_modules/licia/upperFirst.js";
+import nextTick from "./../node_modules/licia/nextTick.js";
+import isEqual from "./../node_modules/licia/isEqual.js";
+import extend from "./../node_modules/licia/extend.js";
+import evalCss from "./lib/evalCss.js";
+import chobitsu from "./lib/chobitsu.js";
 
 export default {
   init({
@@ -317,36 +317,36 @@ export default {
     this._entryBtn.initCfg(settings);
     devTools.initCfg(settings);
   },
-  _initTools(
-    tool = [
-      "console",
-      "elements",
-      "network",
-      "resources",
-      "sources",
-      "info",
-      "snippets",
-    ]
-  ) {
-    tool = toArr(tool);
+  // _initTools(
+  //   tool = [
+  //     "console",
+  //     "elements",
+  //     "network",
+  //     "resources",
+  //     "sources",
+  //     "info",
+  //     "snippets",
+  //   ]
+  // ) {
+  //   tool = toArr(tool);
 
-    const devTools = this._devTools;
+  //   const devTools = this._devTools;
 
-    tool.forEach((name) => {
-      const Tool = this[upperFirst(name)];
-      try {
-        if (Tool) devTools.add(new Tool());
-      } catch (e) {
-        // Use nextTick to make sure it is possible to be caught by console panel.
-        nextTick(() => {
-          logger.error(
-            `Something wrong when initializing tool ${name}:`,
-            e.message
-          );
-        });
-      }
-    });
+  //   tool.forEach((name) => {
+  //     const Tool = this[upperFirst(name)];
+  //     try {
+  //       if (Tool) devTools.add(new Tool());
+  //     } catch (e) {
+  //       // Use nextTick to make sure it is possible to be caught by console panel.
+  //       nextTick(() => {
+  //         logger.error(
+  //           `Something wrong when initializing tool ${name}:`,
+  //           e.message
+  //         );
+  //       });
+  //     }
+  //   });
 
-    devTools.showTool(tool[0] || "settings");
-  },
+  //   devTools.showTool(tool[0] || "settings");
+  // },
 };

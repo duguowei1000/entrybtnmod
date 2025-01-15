@@ -1,4 +1,4 @@
-import Emitter from 'licia/Emitter'
+import Emitter from 'licia/Emitter.js'
 
 const emitter = new Emitter()
 emitter.ADD = 'ADD'
