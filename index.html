@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
   <body>
+    
     <!-- <script type="module" src="./src/index.js"></script> -->
+    <script>
+      ;(function () {
+        let el = document.createElement('div')
+        document.body.appendChild(el)
+        el.textContent = 'Hello, world! yoyoyo';
+        setTimeout(function () {
+          try {
+            eruda.init({
+              container: el,
+              useShadowDom: false,
+              defaults: {
+                displaySize: 50,
+                transparency: 0.9,
+                theme: 'Monokai Pro',
+              },
+            })
+          } catch (e) {
+            alert(e)
+          }
+          eruda.show().get().config.set('displaySize', 50)
+        }, 1000)
+      })()
+    </script>
+    <div></div>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
   </body>

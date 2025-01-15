@@ -12,9 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^9.0.1",
-    "fastify": "^4.26.2"
+    "fastify": "^4.26.2",
+    "node-localstorage": "^3.0.5"
   },
   "devDependencies": {
-    "licia": "^1.44.0"
+    "chobitsu": "^1.8.4",
+    "licia": "^1.44.0",
+    "luna-modal": "^1.2.3",
+    "luna-notification": "^0.3.2",
+    "luna-setting": "^2.0.1",
+    "luna-tab": "^0.3.2"
   }
 }
