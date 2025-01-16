@@ -4,7 +4,9 @@ let logger
 
 export default logger = new Logger(
   '[Eruda]',
-  ENV === 'production' ? 'warn' : 'debug'
+  
+  'production'
+  //ENV === 'production' ? 'warn' : 'debug'
 )
 
 logger.formatter = function (type, argList) {

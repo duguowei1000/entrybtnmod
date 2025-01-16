@@ -11,9 +11,12 @@ import { pxToNum, classPrefix as c, eventClient } from "./../lib/util.js";
 // import evalCss from "../lib/evalCss";
 import evalCss from "./../lib/evalCss.js";
 
-const $document = $(document);
+
+
 
 export default class EntryBtn extends Emitter {
+
+  
   constructor($container) {
     super();
 
@@ -88,6 +91,8 @@ export default class EntryBtn extends Emitter {
     this.setPos(pos);
   }
   _onDragStart = (e) => {
+    if (typeof document !== 'undefined') {
+      const $document = $(document);}
     const $el = this._$el;
     $el.addClass(c("active"));
 
